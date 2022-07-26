@@ -44,3 +44,5 @@ pyinstaller --onefile --windowed
 ```
 
 which will compile your app into a standalone program that can be run from a single file and that opens without the need to have the command terminal running in the background.
+
+NOTE: Although the `dummy_serial.py` and `test_minimalmodbus.py` files do not need to be modified at all, they are still required in order to build the "DUMMY" serial slave. Make sure to download them and keep them in the same directory as your `main.py` file while working on modifications or compiling a new version of this program.
