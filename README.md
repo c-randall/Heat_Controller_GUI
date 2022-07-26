@@ -9,6 +9,8 @@ The Watlow EHG-SL10 heat controller uses Modbus RTU serial connection protocols.
 </p>
 
 ## File descriptions:
+-`main_windows.exe`: executable application compiled for Windows PCs, tested on Windows 10
+-`main_macos.app`: executable application compiled for macOs computers, tested on macOS Monterey (ver: 12.4)
 - `gui.ui`: user interface file (created using the PyQt5 Designer), this file only needs to be edited if HEAVY changes to the visual parts of the GUI are desired
 - `main.py`: Python script that incorporates code for both the GUI and the app functionality, this is the file that would need to be modified to change smaller visuals in the GUI and/or any app functionality
 - `dummy_serial.py`: functions to initialize a dummy RTU serial slave for testing purposes, taken from the tests folder of the minimalmodbus module on GitHub
