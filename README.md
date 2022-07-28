@@ -4,13 +4,9 @@ GUI for Watlow EHG-SL10 heat controller, uses Modbus RTU serial connection.
 ## Project description:
 The Watlow EHG-SL10 heat controller uses Modbus RTU serial connection protocols. Communication and control of the controller was originally supported directly by Watlow through their proprietary EHG-soft software. This software was discontinued in 2007 and was only supported on Windows XP. In order to communicate and control the device on newer opperating systems, this GUI was developed. The GUI is a self-contained program that was originally written using python. The tool can be used without any knowledge of Python, however, modifications for your own applications will require a moderate amount of Python knowledge. A visual of the app window is shown below:
 
-<p algin="center">
-<img width="801" alt="MainWindowScreenShot" src="https://user-images.githubusercontent.com/39809042/181644711-904c5a56-d3c4-406f-a4cc-fe61c7da653b.png">
-</p>
+![MainWindowScreenShot](https://user-images.githubusercontent.com/39809042/181647247-416492c4-e638-4758-93f5-1f16a6642867.png)
 
-<p algin="center">
-<img width="845" alt="ConfigureScreenShot" src="https://user-images.githubusercontent.com/39809042/181644724-4981a679-21c2-4a48-8c2e-89d4660187b5.png">
-</p>
+![ConfigureScreenShot](https://user-images.githubusercontent.com/39809042/181647263-f6c24831-ef6c-4488-a342-e9f5abf82610.png)
 
 The first image shows the "Main Window" tab, where the widgets are used to show the continuously read (updated every 1 second) temperatures for the set point (SP) and process variable (PV). The second image shows the "Configure" tab, which is where the read/write registers and function codes can be modified. This tab allows this app to work for more than just the Watlow EHG-SL10. It can work with any Modbus RTU supported controller, so long as you input the correct registers/function codes from your device. The app is set up to automatically save and load your configuration, so you should only need to modify the values once if you are always using it with the same controller. There are also tabs for "Directions" and "About" which include valuable information, but are not fully pictured here.
 
