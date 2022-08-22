@@ -48,7 +48,7 @@ If you are satisfied with the visual aspect of the GUI, the `main.py` file can d
 After any modifications have been made to the `main.py` file, another executable application can be generated using the pyinstaller module. Open a command terminal in your Python environment and navigate to the directory that contains your new `main.py` file. Afterward, enter the code:
 
 ```
-pyinstaller --onefile --windowed
+pyinstaller --onefile --windowed main.py
 ```
 
 which will compile your app into a standalone program that can be run from a single file and that opens without the need to have the command terminal running in the background. Pyinstaller will only compile an app that is compatible with the OS that you build it on. If you wish to create both a windows and macos version, you will need access to two different computers that run the separate operating systems.
