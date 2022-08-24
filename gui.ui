@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>811</width>
+    <width>803</width>
     <height>309</height>
    </rect>
   </property>
@@ -15,12 +15,6 @@
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
-  </property>
-  <property name="minimumSize">
-   <size>
-    <width>0</width>
-    <height>0</height>
-   </size>
   </property>
   <property name="font">
    <font>
@@ -62,7 +56,7 @@
        <bool>true</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_MW">
        <property name="autoFillBackground">
@@ -147,7 +141,7 @@
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>175</width>
+                 <width>150</width>
                  <height>51</height>
                 </size>
                </property>
@@ -192,14 +186,14 @@
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>175</width>
+                 <width>150</width>
                  <height>31</height>
                 </size>
                </property>
                <property name="font">
                 <font>
                  <family>Arial</family>
-                 <pointsize>18</pointsize>
+                 <pointsize>14</pointsize>
                  <weight>50</weight>
                  <bold>false</bold>
                 </font>
@@ -219,7 +213,7 @@
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>175</width>
+                 <width>150</width>
                  <height>51</height>
                 </size>
                </property>
@@ -246,14 +240,14 @@
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>175</width>
+                 <width>150</width>
                  <height>111</height>
                 </size>
                </property>
                <property name="font">
                 <font>
                  <family>Arial</family>
-                 <pointsize>18</pointsize>
+                 <pointsize>14</pointsize>
                  <weight>50</weight>
                  <bold>false</bold>
                 </font>
@@ -273,7 +267,7 @@
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>175</width>
+                 <width>150</width>
                  <height>51</height>
                 </size>
                </property>
@@ -304,14 +298,14 @@
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>175</width>
+                 <width>150</width>
                  <height>111</height>
                 </size>
                </property>
                <property name="font">
                 <font>
                  <family>Arial</family>
-                 <pointsize>18</pointsize>
+                 <pointsize>14</pointsize>
                  <weight>50</weight>
                  <bold>false</bold>
                 </font>
@@ -331,14 +325,14 @@
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>175</width>
+                 <width>150</width>
                  <height>31</height>
                 </size>
                </property>
                <property name="font">
                 <font>
                  <family>Arial</family>
-                 <pointsize>18</pointsize>
+                 <pointsize>14</pointsize>
                  <weight>50</weight>
                  <bold>false</bold>
                 </font>
@@ -358,7 +352,7 @@
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>175</width>
+                 <width>150</width>
                  <height>51</height>
                 </size>
                </property>
@@ -386,14 +380,14 @@
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>175</width>
+                 <width>150</width>
                  <height>51</height>
                 </size>
                </property>
                <property name="font">
                 <font>
                  <family>Arial</family>
-                 <pointsize>18</pointsize>
+                 <pointsize>14</pointsize>
                  <weight>50</weight>
                  <bold>false</bold>
                 </font>
@@ -413,14 +407,14 @@
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>175</width>
+                 <width>150</width>
                  <height>31</height>
                 </size>
                </property>
                <property name="font">
                 <font>
                  <family>Arial</family>
-                 <pointsize>18</pointsize>
+                 <pointsize>14</pointsize>
                  <weight>50</weight>
                  <bold>false</bold>
                 </font>
@@ -506,10 +500,16 @@
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>31</height>
+             </size>
+            </property>
             <property name="font">
              <font>
               <family>Arial</family>
-              <pointsize>18</pointsize>
+              <pointsize>14</pointsize>
               <weight>50</weight>
               <bold>false</bold>
              </font>
@@ -518,7 +518,7 @@
              <string>SP Options</string>
             </property>
             <property name="alignment">
-             <set>Qt::AlignCenter</set>
+             <set>Qt::AlignBottom|Qt::AlignHCenter</set>
             </property>
            </widget>
           </item>
@@ -530,10 +530,16 @@
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>31</height>
+             </size>
+            </property>
             <property name="font">
              <font>
               <family>Arial</family>
-              <pointsize>18</pointsize>
+              <pointsize>14</pointsize>
               <weight>50</weight>
               <bold>false</bold>
              </font>
@@ -542,7 +548,7 @@
              <string>PV Options</string>
             </property>
             <property name="alignment">
-             <set>Qt::AlignCenter</set>
+             <set>Qt::AlignBottom|Qt::AlignHCenter</set>
             </property>
            </widget>
           </item>
@@ -554,10 +560,16 @@
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>31</height>
+             </size>
+            </property>
             <property name="font">
              <font>
               <family>Arial</family>
-              <pointsize>18</pointsize>
+              <pointsize>14</pointsize>
               <weight>50</weight>
               <bold>false</bold>
              </font>
@@ -566,7 +578,7 @@
              <string>Temp Options</string>
             </property>
             <property name="alignment">
-             <set>Qt::AlignCenter</set>
+             <set>Qt::AlignBottom|Qt::AlignHCenter</set>
             </property>
            </widget>
           </item>
@@ -705,7 +717,7 @@
             <property name="font">
              <font>
               <family>Arial</family>
-              <pointsize>18</pointsize>
+              <pointsize>14</pointsize>
               <weight>50</weight>
               <bold>false</bold>
              </font>
@@ -820,7 +832,7 @@
             <property name="font">
              <font>
               <family>Arial</family>
-              <pointsize>18</pointsize>
+              <pointsize>14</pointsize>
               <weight>50</weight>
               <bold>false</bold>
              </font>
@@ -844,7 +856,7 @@
             <property name="font">
              <font>
               <family>Arial</family>
-              <pointsize>18</pointsize>
+              <pointsize>14</pointsize>
               <weight>50</weight>
               <bold>false</bold>
              </font>
@@ -868,7 +880,7 @@
             <property name="font">
              <font>
               <family>Arial</family>
-              <pointsize>18</pointsize>
+              <pointsize>14</pointsize>
               <weight>50</weight>
               <bold>false</bold>
              </font>

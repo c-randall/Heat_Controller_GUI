@@ -106,7 +106,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.SPLabel.setMinimumSize(QtCore.QSize(175, 31))
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.SPLabel.setFont(font)
@@ -121,7 +121,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.COMPortWatlow.setMinimumSize(QtCore.QSize(175, 51))
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.COMPortWatlow.setFont(font)
@@ -137,7 +137,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.StartButton.setMinimumSize(QtCore.QSize(175, 111))
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.StartButton.setFont(font)
@@ -166,7 +166,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.StopButton.setMinimumSize(QtCore.QSize(175, 111))
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.StopButton.setFont(font)
@@ -181,7 +181,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.COMLabelWatlow.setMinimumSize(QtCore.QSize(175, 31))
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.COMLabelWatlow.setFont(font)
@@ -209,7 +209,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.EngageButton.setMinimumSize(QtCore.QSize(175, 51))
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.EngageButton.setFont(font)
@@ -224,7 +224,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.PVLabel.setMinimumSize(QtCore.QSize(175, 31))
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.PVLabel.setFont(font)
@@ -271,9 +271,10 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.SPOptionsLabel.sizePolicy().hasHeightForWidth())
         self.SPOptionsLabel.setSizePolicy(sizePolicy)
+        self.SPOptionsLabel.setMinimumSize(QtCore.QSize(150, 51))
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.SPOptionsLabel.setFont(font)
@@ -286,9 +287,10 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.PVOptionsLabel.sizePolicy().hasHeightForWidth())
         self.PVOptionsLabel.setSizePolicy(sizePolicy)
+        self.PVOptionsLabel.setMinimumSize(QtCore.QSize(150, 51))
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.PVOptionsLabel.setFont(font)
@@ -301,9 +303,10 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.TempOptionsLabel.sizePolicy().hasHeightForWidth())
         self.TempOptionsLabel.setSizePolicy(sizePolicy)
+        self.TempOptionsLabel.setMinimumSize(QtCore.QSize(150, 51))
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.TempOptionsLabel.setFont(font)
@@ -377,7 +380,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.MinTempLabel.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.MinTempLabel.setFont(font)
@@ -434,7 +437,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.MaxTemLabel.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.MaxTemLabel.setFont(font)
@@ -449,7 +452,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.FuncCodeLabel.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.FuncCodeLabel.setFont(font)
@@ -464,7 +467,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.RegLabel.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
         self.RegLabel.setFont(font)
@@ -665,22 +668,20 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         flag = 0
         COM = self.COMPortWatlow.currentText()
 
-        Config = {}
-
         self.minT = self.MinTemp.value()
         self.maxT = self.MaxTemp.value()
-        Config["minT"] = self.minT
-        Config["maxT"] = self.maxT
+        minT = self.minT
+        maxT = self.maxT
 
         self.SP_reg = self.SPRegister.value()
         self.PV_reg = self.PVRegister.value()
-        Config["SP_reg"] = self.SP_reg
-        Config["PV_reg"] = self.PV_reg
+        SP_reg = self.SP_reg
+        PV_reg = self.PV_reg
 
         self.SP_FuncCode = self.SPFuncCode.value()
         self.PV_FuncCode = self.PVFuncCode.value()
-        Config["SP_FuncCode"] = self.SP_FuncCode
-        Config["PV_FuncCode"] = self.PV_FuncCode
+        SP_FuncCode = self.SP_FuncCode
+        PV_FuncCode = self.PV_FuncCode
 
         self.SPInput.setMinimum(self.minT)
         self.SPInput.setMaximum(self.maxT)
@@ -697,8 +698,8 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
 
             watlow.mode = mb.MODE_RTU
             watlow.clear_buffers_each_transaction = True
-            watlow.read_register(self.PV_Reg,0)
             watlow.read_register(self.SP_reg,0)
+            watlow.read_register(self.PV_reg,0)
 
             self.statusBar.showMessage("Connected to "+COM,self.statusTime)
 
@@ -720,7 +721,8 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
             # watlow.read_register(4097,1)
             # watlow.write_register(4097,823.6,1)
 
-        return {"watlow":watlow, "COM":COM, "flag":flag, "Config": Config}
+        return {"watlow":watlow, "COM":COM, "flag":flag, "minT": minT, "maxT":maxT,
+                "SP_reg":SP_reg, "PV_reg":PV_reg, "SP_FuncCode":SP_FuncCode, "PV_FuncCode":PV_FuncCode}
 
     def start_loop(self):
 
@@ -758,7 +760,8 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
             self.statusBar.showMessage("Max allowed temp is "+str(self.maxT)+" C",self.statusTime)
 
         if self.COM != "DUMMY":
-            self.watlow.write_register(self.SP_reg,SP,0,functioncode=self.SP_FuncCode)
+            try: self.watlow.write_register(self.SP_reg,SP,0,functioncode=self.SP_FuncCode)
+            except: self.statusBar.showMessage("Lost connection... check cable",self.statusTime)
 
         self.display_SP(SP)
 
@@ -770,11 +773,15 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.display_SP(self.minT)
 
     def display_PV(self,PV):
-        if self.COM != "DUMMY": PV = self.watlow.read_register(self.PV_reg,0)
+        if self.COM != "DUMMY":
+            try: PV = self.watlow.read_register(self.PV_reg,0)
+            except: self.statusBar.showMessage("Lost connection... check cable",self.statusTime)
         self.PVDisplay.display(PV)
 
     def display_SP(self,SP):
-        if self.COM != "DUMMY": SP = self.watlow.read_register(self.SP_reg,0)
+        if self.COM != "DUMMY":
+            try: SP = self.watlow.read_register(self.SP_reg,0)
+            except: self.statusBar.showMessage("Lost connection... check cable",self.statusTime)
         self.SPDisplay.display(SP)
 
     def closeEvent(self,event):
@@ -826,8 +833,11 @@ class Reader(QThread):
 
         else:
             while self.run:
-                self.PV = self.watlow.read_register(self.PV_reg,0)
-                self.SP = self.watlow.read_register(self.SP_reg,0)
+                try:
+                    self.PV = self.watlow.read_register(self.PV_reg,0)
+                    self.SP = self.watlow.read_register(self.SP_reg,0)
+                except:
+                    None
 
                 self.PV_sig.emit(self.PV)
                 self.SP_sig.emit(self.SP)
